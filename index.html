@@ -347,7 +347,7 @@
 
       .work-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 14px;
       }
 
@@ -529,6 +529,7 @@
         .hero { grid-template-columns: 1fr; padding-top: 54px; }
         .hero-visual { min-height: 390px; max-width: 620px; width: 100%; margin: 0 auto; }
         .capabilities { grid-template-columns: 1fr; }
+        .work-grid { grid-template-columns: 1fr; }
         .card { min-height: 0; }
         .card-number { margin-bottom: 26px; }
         .principles { grid-template-columns: 1fr; gap: 40px; }
@@ -536,8 +537,8 @@
 
       @media (max-width: 600px) {
         .wrap { width: min(100% - 28px, 1140px); }
-        .nav { min-height: 70px; }
-        .nav-links { gap: 14px; font-size: 0.75rem; }
+        .nav { align-items: flex-start; flex-direction: column; gap: 14px; min-height: 70px; padding: 20px 0; }
+        .nav-links { flex-wrap: wrap; gap: 10px 14px; font-size: 0.75rem; }
         .hero { min-height: auto; padding: 62px 0 78px; }
         h1 { font-size: clamp(3rem, 16vw, 5rem); }
         .hero-visual { min-height: 330px; }
@@ -547,7 +548,6 @@
         .section { padding: 70px 0; }
         .section-heading, .contact { display: block; }
         .section-heading p { margin-top: 18px; }
-        .work-grid { grid-template-columns: 1fr; }
         .project { min-height: 250px; }
         .project-text .project-top { margin-bottom: 52px; }
         .visual-grid { grid-template-columns: 1fr; }
@@ -673,14 +673,8 @@
               <p>Portable, handheld network auditing device designed for wireless analysis, packet capture, and security auditing.</p>
               <div class="stack"><span>wireless</span><span>packet capture</span><span>security</span></div>
             </article>
-            <article class="project project-text">
-              <div class="project-top"><span class="tag">Hardware / control</span><span class="project-index">03</span></div>
-              <h3>Silverback</h3>
-              <p>A robust foundation for automation work where hardware, software, and reliable control need to move as one.</p>
-              <div class="stack"><span>firmware</span><span>IoT</span><span>control</span></div>
-            </article>
             <article class="project">
-              <div class="project-top"><span class="tag">Diagnostics platform</span><span class="project-index">04</span></div>
+              <div class="project-top"><span class="tag">Diagnostics platform</span><span class="project-index">03</span></div>
               <div class="project-media"><img src="assets/codebench-device.jpg" alt="CodeBench compact developer tool with illuminated lettering" loading="lazy" /></div>
               <h3>CodeBench</h3>
               <p>Plug-and-play system diagnostics, dongles, recovery tools, and automated system maintenance solutions.</p>
